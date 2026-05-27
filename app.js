@@ -16,7 +16,7 @@ var conversations = {};
 
 function loadProviders() {
   try {
-    return JSON.parse(fs.readFileSync('/home/romersae/midelivery/providers.json', 'utf8'));
+    return JSON.parse(fs.readFileSync('./providers.json', 'utf8'));
   } catch(e) {
     return [];
   }
@@ -76,7 +76,11 @@ function callClaude(messages, systemPrompt) {
     'Content-Length': Buffer.byteLength(body)
   };
   return httpsPost('api.anthropic.com', '/v1/messages', headers, body)
-    .then(function(r) { return r.content[0].text; });
+    .then(function(r) {
+      if (r && r.content && r.content[0]) return r.content[0].text;
+      console.error('Claude error:', JSON.stringify(r));
+      return 'Disculpa, problema tecnico.';
+    });
 }
 
 function processMessage(userPhone, userMessage) {
