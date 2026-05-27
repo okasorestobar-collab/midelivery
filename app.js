@@ -24,12 +24,7 @@ function loadProviders() {
 
 function httpsPost(hostname, path, headers, body) {
   return new Promise(function(resolve, reject) {
-    var options = {
-      hostname: hostname,
-      path: path,
-      method: 'POST',
-      headers: headers
-    };
+    var options = { hostname: hostname, path: path, method: 'POST', headers: headers };
     var req = https.request(options, function(res) {
       var data = '';
       res.on('data', function(chunk) { data += chunk; });
@@ -138,6 +133,12 @@ var server = http.createServer(function(req, res) {
   if (req.method === 'GET' && pathname === '/') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ status: 'MiDelivery funcionando v3' }));
+    return;
+  }
+
+  if (req.method === 'GET' && pathname === '/privacy') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end('<!doctype html><html><head><meta charset="utf-8"><title>Politica de Privacidad - MiDeliveryAI</title></head><body><h1>Politica de Privacidad - MiDeliveryAI</h1><p>MiDeliveryAI usa WhatsApp para recibir y responder pedidos de clientes.</p><p>Los datos procesados pueden incluir numero de telefono, mensajes enviados por WhatsApp, productos solicitados y direccion de entrega cuando el cliente la proporciona.</p><p>Estos datos se usan solo para gestionar pedidos, responder consultas, coordinar entregas y mejorar el servicio.</p><p>Los datos pueden compartirse solo con el operador logistico o proveedor necesario para completar el pedido.</p><p>Para solicitar acceso, correccion o eliminacion de datos, escribe al mismo numero de WhatsApp de MiDeliveryAI o al correo aromerosecaira@hotmail.com.</p><p>Ultima actualizacion: mayo 2026.</p></body></html>');
     return;
   }
 
