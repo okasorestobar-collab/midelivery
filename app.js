@@ -94,7 +94,7 @@ function notifyChatwoot(toPhone, message) {
 
   httpsGet(CHATWOOT_URL, searchPath, headers)
     .then(function(result) {
-      var contacts = result && result.payload && result.payload.contacts;
+      var contacts = result && result.payload;
       if (!contacts || contacts.length === 0) return;
       var contactId = contacts[0].id;
 
@@ -121,7 +121,7 @@ function notifyChatwoot(toPhone, message) {
           return httpsPost(CHATWOOT_URL, '/api/v1/accounts/' + CHATWOOT_ACCOUNT_ID + '/conversations/' + convId + '/messages', postHeaders, msgBody);
         });
     })
-    .then(function() { console.log('[Chatwoot] Respuesta Mia registrada para ' + toPhone); })
+    .then(function(r) { if(r && r.id) console.log("[Chatwoot] Mensaje ID " + r.id + " registrado para " + toPhone); })
     .catch(function(e) { console.error('[Chatwoot] Error notificando respuesta: ' + e.message); });
 }
 
