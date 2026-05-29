@@ -11,6 +11,7 @@ var WEBHOOK_VERIFY_TOKEN = process.env.WEBHOOK_VERIFY_TOKEN;
 var LOGISTICS_NUMBER = process.env.LOGISTICS_NUMBER;
 var PROFIT_MARGIN = parseFloat(process.env.PROFIT_MARGIN || '0.15');
 var PORT = process.env.PORT || 3000;
+var WABA_ID = '101658011052309';
 
 var conversations = {};
 
@@ -37,6 +38,34 @@ function httpsPost(hostname, path, headers, body) {
     req.write(body);
     req.end();
   });
+}
+
+function httpsGet(hostname, path, headers) {
+  return new Promise(function(resolve, reject) {
+    var options = { hostname: hostname, path: path, method: 'GET', headers: headers };
+    var req = https.request(options, function(res) {
+      var data = '';
+      res.on('data', function(chunk) { data += chunk; });
+      res.on('end', function() {
+        try { resolve(JSON.parse(data)); }
+        catch(e) { resolve(data); }
+      });
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+function subscribeWABA() {
+  var emptyBody = '{}';
+  var headers = {
+    'Authorization': 'Bearer ' + WHATSAPP_TOKEN,
+    'Content-Type': 'application/json',
+    'Content-Length': Buffer.byteLength(emptyBody)
+  };
+  httpsPost('graph.facebook.com', '/v18.0/' + WABA_ID + '/subscribed_apps', headers, emptyBody)
+    .then(function(r) { console.log('WABA suscrito:', JSON.stringify(r)); })
+    .catch(function(e) { console.error('Error suscripcion WABA:', e.message); });
 }
 
 function sendWhatsApp(to, message) {
@@ -192,4 +221,5 @@ var server = http.createServer(function(req, res) {
 
 server.listen(PORT, function() {
   console.log('MiDelivery v3 corriendo en puerto ' + PORT);
+  subscribeWABA();
 });
