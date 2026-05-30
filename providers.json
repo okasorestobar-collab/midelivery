@@ -1,0 +1,116 @@
+[
+  {
+    "id": "margarita",
+    "nombre": "Margarita Restaurant",
+    "categoria": "Restaurante Ecuatoriano",
+    "telefono": "593990095075",
+    "distancia_km": 0.5,
+    "calificacion": 5,
+    "credito": false,
+    "horario": "Lunes a Domingo",
+    "ubicacion": "Plaza Volare, Local 6",
+    "productos": [
+      {
+        "categoria": "Entradas",
+        "items": [
+          { "nombre": "Pinchos de jamón en salsa de piña", "precio": 4.00 },
+          { "nombre": "Camarones arrebosados", "precio": 6.50 },
+          { "nombre": "Canastas de verde con camarón acevichado (7 unidades)", "precio": 7.00 }
+        ]
+      },
+      {
+        "categoria": "Tradicionales",
+        "items": [
+          { "nombre": "Encebollado + chifle", "precio": 3.50 },
+          { "nombre": "Bollo + arroz", "precio": 3.00 },
+          { "nombre": "Guatita con arroz", "precio": 4.00 },
+          { "nombre": "Cazuela de albacora", "precio": 6.00 },
+          { "nombre": "Cazuela mixta (albacora, calamar y camarón)", "precio": 9.00 },
+          { "nombre": "Yapingacho", "precio": 6.50 },
+          { "nombre": "Fritada", "precio": 5.00 },
+          { "nombre": "Seco de chancho", "precio": 6.50 },
+          { "nombre": "Seco de pollo", "precio": 6.50 }
+        ]
+      },
+      {
+        "categoria": "Especialidades",
+        "items": [
+          { "nombre": "Fritada de la casa / Chaulafán andino", "precio": 6.50, "descripcion": "Fritada de cerdo con mote, habas, choclo, papa chaucha, melloco, maduro acaramelado, chifles y huevo duro en salsa de maní" },
+          { "nombre": "Encocado de camarón", "precio": 7.00 },
+          { "nombre": "Camarones al ajillo", "precio": 7.00 },
+          { "nombre": "Arroz meloso de camarón", "precio": 7.00 },
+          { "nombre": "Ceviche de camarón", "precio": 7.00 }
+        ]
+      },
+      {
+        "categoria": "Alitas + Papas Fritas",
+        "items": [
+          { "nombre": "Alitas x4 + papas fritas", "precio": 3.99 },
+          { "nombre": "Alitas x8 + papas fritas", "precio": 6.99 },
+          { "nombre": "Alitas x12 + papas fritas", "precio": 10.99 },
+          { "nombre": "Alitas x20 + papas fritas", "precio": 16.99 }
+        ]
+      },
+      {
+        "categoria": "Plato del Chef",
+        "items": [
+          { "nombre": "Marea Brava", "precio": 7.00, "descripcion": "Arroz con cocolón, puré artesanal de papa chaucha, camarones y calamares en reducción de vino blanco" }
+        ]
+      },
+      {
+        "categoria": "Bebidas sin alcohol",
+        "items": [
+          { "nombre": "Jugo natural (vaso)", "precio": 1.50 },
+          { "nombre": "Jugo natural (jarra)", "precio": 4.00 },
+          { "nombre": "Agua sin gas", "precio": 1.00 },
+          { "nombre": "Gaseosa personal", "precio": 1.00 }
+        ]
+      },
+      {
+        "categoria": "Bebidas con alcohol",
+        "items": [
+          { "nombre": "Club personal", "precio": 2.25 },
+          { "nombre": "Pilsener Light personal", "precio": 2.00 },
+          { "nombre": "Corona personal", "precio": 3.00 },
+          { "nombre": "Corona Buck x4", "precio": 10.00 },
+          { "nombre": "Copa de vino de la casa", "precio": 2.50 },
+          { "nombre": "Copa de sangría (300ml)", "precio": 3.50 },
+          { "nombre": "Jarra de sangría (800ml)", "precio": 8.00 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tecnogo",
+    "nombre": "TecnoGO",
+    "categoria": "Streaming y TV Digital",
+    "telefono": "593999610313",
+    "calificacion": 5,
+    "credito": false,
+    "horario": "Lunes a Domingo",
+    "ubicacion": "Instalación en persona — a domicilio o donde el cliente lleve sus dispositivos",
+    "descripcion": "Planes de Flujo TV: +900 canales en vivo, +9000 películas (incluye estrenos en cartelera), +6000 series, todos los deportes del mundo en vivo (fútbol, NBA, NFL, F1, tenis, boxeo y más). Calidad SD, HD, Full HD y 4K. Compatible con Android móvil y Smart TV. No compatible con iOS, Roku ni Apple TV. Requiere mínimo 5 Mbps.",
+    "productos": [
+      {
+        "categoria": "Suscripción mensual",
+        "items": [
+          { "nombre": "Plan Flujo TV — 30 días (hasta 3 dispositivos simultáneos)", "precio": 12.00, "descripcion": "Acceso completo: +900 canales, +9000 películas con estrenos en cartelera, +6000 series y todos los deportes del mundo en vivo. Calidad hasta 4K." }
+        ]
+      },
+      {
+        "categoria": "Instalación (pago único)",
+        "items": [
+          { "nombre": "Instalación 1 dispositivo", "precio": 20.00, "descripcion": "Instalación en persona de Flujo TV en 1 dispositivo Android o Smart TV" },
+          { "nombre": "Instalación 2 dispositivos", "precio": 30.00, "descripcion": "Instalación en persona de Flujo TV en 2 dispositivos en el mismo punto" },
+          { "nombre": "Instalación 3 dispositivos", "precio": 40.00, "descripcion": "Instalación en persona de Flujo TV en 3 dispositivos en el mismo punto" }
+        ]
+      },
+      {
+        "categoria": "Promoción",
+        "items": [
+          { "nombre": "🎁 Primer mes GRATIS (hasta 30 junio 2026)", "precio": 0.00, "descripcion": "Primer mes de suscripción de 30 días completamente gratis. Solo pagas la instalación si aplica." }
+        ]
+      }
+    ]
+  }
+]
