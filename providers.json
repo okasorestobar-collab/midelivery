@@ -1,373 +1,230 @@
-[
-  {
-    "id": "margarita",
-    "nombre": "Margarita Restaurant",
-    "categoria": "Restaurante Ecuatoriano",
-    "telefono": "593990095075",
-    "distancia_km": 0.5,
-    "calificacion": 5,
-    "credito": false,
-    "horario": "Lunes a Domingo",
-    "ubicacion": "Plaza Volare, Local 6",
-    "productos": [
-      {
-        "categoria": "Desayunos",
-        "items": [
-          {
-            "nombre": "Desayuno Sencillo",
-            "precio": 5.0,
-            "descripcion": "Bolón de queso, huevo frito, jugo natural y café pasado"
-          },
-          {
-            "nombre": "Bolón de Queso",
-            "precio": 3.0
-          },
-          {
-            "nombre": "Bolón de Chicharrón",
-            "precio": 3.5
-          },
-          {
-            "nombre": "Bolón Mixto",
-            "precio": 4.0
-          },
-          {
-            "nombre": "Tigrillo",
-            "precio": 6.5
-          }
-        ]
-      },
-      {
-        "categoria": "Extras",
-        "items": [
-          {
-            "nombre": "Huevo frito (unidad)",
-            "precio": 0.5
-          },
-          {
-            "nombre": "Bistec de carne",
-            "precio": 3.0
-          },
-          {
-            "nombre": "Canastas de camarón cevichado (7 unid)",
-            "precio": 7.0
-          }
-        ]
-      },
-      {
-        "categoria": "Entradas",
-        "items": [
-          {
-            "nombre": "Pinchos de Jamón en Salsa de Piña",
-            "precio": 4.5
-          },
-          {
-            "nombre": "Camarones Arrebozados",
-            "precio": 7.0
-          },
-          {
-            "nombre": "Canastas de Camarón Cevichado (7 unid)",
-            "precio": 7.0
-          }
-        ]
-      },
-      {
-        "categoria": "Tradicionales",
-        "items": [
-          {
-            "nombre": "Encebollado + Chifle",
-            "precio": 3.5
-          },
-          {
-            "nombre": "Bollo de Albacora + Arroz",
-            "precio": 3.0
-          },
-          {
-            "nombre": "Guatita con Arroz",
-            "precio": 4.5
-          },
-          {
-            "nombre": "Yapingacho",
-            "precio": 6.5
-          },
-          {
-            "nombre": "Fritada",
-            "precio": 5.0
-          },
-          {
-            "nombre": "Caldo de Salchicha",
-            "precio": 5.0
-          },
-          {
-            "nombre": "Seco de Chancho",
-            "precio": 6.5
-          },
-          {
-            "nombre": "Seco de Pollo",
-            "precio": 6.0
-          },
-          {
-            "nombre": "Cazuela de Albacora",
-            "precio": 5.5
-          },
-          {
-            "nombre": "Cazuela Mixta (Albacora – Camarón – Calamar)",
-            "precio": 9.0
-          },
-          {
-            "nombre": "Arroz con Pescado Frito (Dorado)",
-            "precio": 6.0
-          },
-          {
-            "nombre": "Camarones Apanados",
-            "precio": 7.0
-          },
-          {
-            "nombre": "Caldo de Bola de Mariscos (Camarón – Calamar – Cangrejo)",
-            "precio": 9.5
-          }
-        ]
-      },
-      {
-        "categoria": "Banderas",
-        "items": [
-          {
-            "nombre": "Guatita + Encebollado",
-            "precio": 6.5
-          },
-          {
-            "nombre": "Guatita + Seco de Chancho",
-            "precio": 9.0
-          },
-          {
-            "nombre": "Guatita + Encebollado + Ceviche de Camarón",
-            "precio": 10.0
-          },
-          {
-            "nombre": "Guatita + Encebollado + Seco de Chancho",
-            "precio": 11.5
-          }
-        ]
-      },
-      {
-        "categoria": "Especialidades",
-        "items": [
-          {
-            "nombre": "Marea Brava",
-            "precio": 7.0,
-            "descripcion": "Arroz con cocolón, acompañado de puré artesanal de papa chaucha, camarones y calamares en reducción de vino blanco"
-          },
-          {
-            "nombre": "Chaulafán Andino",
-            "precio": 6.5,
-            "descripcion": "Fritada de cerdo, mote, habas, choclo desgranado, papa chaucha, melloco, maduro acaramelado, chifles y huevo duro, bañado en salsa de maní"
-          },
-          {
-            "nombre": "Encocado de Camarón",
-            "precio": 7.0
-          },
-          {
-            "nombre": "Camarones al Ajillo",
-            "precio": 7.0
-          },
-          {
-            "nombre": "Arroz Meloso de Camarón",
-            "precio": 7.0
-          },
-          {
-            "nombre": "Ceviche de Camarón",
-            "precio": 7.0
-          }
-        ]
-      },
-      {
-        "categoria": "Antojos",
-        "items": [
-          {
-            "nombre": "Alitas x4 + papas fritas",
-            "precio": 3.99
-          },
-          {
-            "nombre": "Alitas x8 + papas fritas",
-            "precio": 6.99
-          },
-          {
-            "nombre": "Alitas x12 + papas fritas",
-            "precio": 10.99
-          },
-          {
-            "nombre": "Alitas x20 + papas fritas",
-            "precio": 16.99
-          },
-          {
-            "nombre": "Burguer Margarita",
-            "precio": 6.5,
-            "descripcion": "120 gr carne, mermelada de tocino, queso cheddar, vegetales y salsas secretas"
-          },
-          {
-            "nombre": "Mignon Burguer",
-            "precio": 6.0,
-            "descripcion": "120 gr carne reducida en vino tinto, salsa de champiñones y salsas secretas"
-          },
-          {
-            "nombre": "Salchipapas",
-            "precio": 4.0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "tecnogo",
-    "nombre": "TecnoGO",
-    "categoria": "Línea propia de LinkMarket - Streaming y TV Digital",
-    "telefono": "593990095075",
-    "notificar_a": "593990095075",
-    "operado_por": "LinkMarket",
-    "es_proveedor_externo": false,
-    "calificacion": 5,
-    "credito": false,
-    "horario": "Lunes a Domingo",
-    "ubicacion": "Instalación en persona — a domicilio o donde el cliente lleve sus dispositivos",
-    "descripcion": "TecnoGO es una línea propia de LinkMarket para planes de Flujo TV. Ofrece +900 canales en vivo, +9000 películas incluyendo estrenos en cartelera, +6000 series y todos los deportes del mundo en vivo (fútbol, NBA, NFL, F1, tenis, boxeo y más). Calidad SD, HD, Full HD y 4K. Compatible con Android móvil y Smart TV. No compatible con iOS, Roku ni Apple TV. Requiere mínimo 5 Mbps. La atención, venta y coordinación la realiza LinkMarket; cuando existe venta confirmada se notifica internamente al número operativo.",
-    "productos": [
-      {
-        "categoria": "Suscripción mensual",
-        "items": [
-          {
-            "nombre": "Plan Flujo TV — 30 días (hasta 3 dispositivos simultáneos)",
-            "precio": 12.0,
-            "descripcion": "Acceso completo: +900 canales en vivo, +9000 películas con estrenos en cartelera, +6000 series y todos los deportes del mundo en vivo. Calidad hasta 4K."
-          }
-        ]
-      },
-      {
-        "categoria": "Instalación presencial (pago único)",
-        "items": [
-          {
-            "nombre": "Instalación 1 dispositivo",
-            "precio": 20.0,
-            "descripcion": "Instalación presencial de Flujo TV en 1 dispositivo Android o Smart TV. El técnico acude donde el cliente o el cliente lleva el equipo al punto coordinado."
-          },
-          {
-            "nombre": "Instalación 2 dispositivos",
-            "precio": 30.0,
-            "descripcion": "Instalación presencial de Flujo TV en 2 dispositivos en el mismo punto."
-          },
-          {
-            "nombre": "Instalación 3 dispositivos",
-            "precio": 40.0,
-            "descripcion": "Instalación presencial de Flujo TV en 3 dispositivos en el mismo punto."
-          }
-        ]
-      },
-      {
-        "categoria": "Promoción",
-        "items": [
-          {
-            "nombre": "🎁 Primer mes GRATIS (hasta 30 junio 2026)",
-            "precio": 0.0,
-            "descripcion": "Primer mes de suscripción de 30 días completamente gratis. El cliente solo paga la instalación si aplica."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "rentas_nj_demo",
-    "nombre": "Rentas NJ Demo",
-    "categoria": "Demo inmobiliaria - alquileres en New Jersey",
-    "tipo_negocio": "real_estate_demo",
-    "telefono": "19735076012",
-    "notificar_a": "19735076012",
-    "operado_por": "Corredor NJ",
-    "es_proveedor_externo": true,
-    "calificacion": 5,
-    "credito": false,
-    "horario": "Disponible para coordinar visitas previa confirmación",
-    "ubicacion": "New Jersey, USA",
-    "descripcion": "Demo para corredor de bienes raíces en NJ. Mia filtra interesados por tipo de propiedad, ciudad/zona, habitaciones, baños, presupuesto, fecha de mudanza, parking, mascotas y voucher. Si el interesado pide fotos, Mia solicita al corredor que las envíe directamente al cliente. Si desea visita, Mia consulta disponibilidad al corredor antes de confirmar.",
-    "productos": [],
-    "propiedades": [
-      {
-        "id": "apt_newark_2br_001",
-        "tipo": "Apartamento",
-        "ciudad": "Newark, NJ",
-        "direccion": "184 Parker St, Newark, NJ",
-        "habitaciones": 2,
-        "banos": 1,
-        "precio_mensual": 1850,
-        "deposito": "1.5 meses",
-        "disponible": "Inmediato",
-        "parking": "En la calle",
-        "mascotas": "Consultar",
-        "voucher": "Consultar con el corredor",
-        "requisitos": "ID, aplicación y comprobante de ingresos o voucher sujeto a aprobación",
-        "descripcion": "Apartamento renovado de 2 habitaciones, cerca de transporte y comercios."
-      },
-      {
-        "id": "apt_eastorange_1br_002",
-        "tipo": "Apartamento",
-        "ciudad": "East Orange, NJ",
-        "direccion": "72 S Munn Ave, East Orange, NJ",
-        "habitaciones": 1,
-        "banos": 1,
-        "precio_mensual": 1550,
-        "deposito": "1.5 meses",
-        "disponible": "1 de julio",
-        "parking": "Disponible con cargo adicional",
-        "mascotas": "No mascotas",
-        "voucher": "Acepta voucher sujeto a aprobación",
-        "requisitos": "Aplicación, ID y prueba de ingresos o voucher",
-        "descripcion": "Unidad cómoda de 1 habitación con buena ubicación y acceso a transporte."
-      },
-      {
-        "id": "house_irvington_3br_003",
-        "tipo": "Casa",
-        "ciudad": "Irvington, NJ",
-        "direccion": "35 Maple Ave, Irvington, NJ",
-        "habitaciones": 3,
-        "banos": 2,
-        "precio_mensual": 2750,
-        "deposito": "1.5 meses",
-        "disponible": "15 de julio",
-        "parking": "Driveway para 2 carros",
-        "mascotas": "Mascotas pequeñas con aprobación",
-        "voucher": "Consultar con el corredor",
-        "requisitos": "ID, aplicación y verificación de ingresos",
-        "descripcion": "Casa familiar de 3 habitaciones con parqueo y patio pequeño."
-      },
-      {
-        "id": "apt_elizabeth_2br_004",
-        "tipo": "Apartamento",
-        "ciudad": "Elizabeth, NJ",
-        "direccion": "510 Jefferson Ave, Elizabeth, NJ",
-        "habitaciones": 2,
-        "banos": 1,
-        "precio_mensual": 1950,
-        "deposito": "1.5 meses",
-        "disponible": "Inmediato",
-        "parking": "Calle / consultar disponibilidad",
-        "mascotas": "Consultar",
-        "voucher": "Consultar con el corredor",
-        "requisitos": "ID, aplicación y comprobante de ingresos",
-        "descripcion": "Apartamento de 2 habitaciones cerca de comercios y rutas principales."
-      },
-      {
-        "id": "studio_paterson_005",
-        "tipo": "Studio / Basement",
-        "ciudad": "Paterson, NJ",
-        "direccion": "88 Market St, Paterson, NJ",
-        "habitaciones": 0,
-        "banos": 1,
-        "precio_mensual": 1250,
-        "deposito": "1.5 meses",
-        "disponible": "Consultar fecha",
-        "parking": "No incluido",
-        "mascotas": "No mascotas",
-        "voucher": "Consultar con el corredor",
-        "requisitos": "ID, aplicación y comprobante de ingresos",
-        "descripcion": "Studio económico para una persona o pareja, sujeto a aprobación."
-      }
-    ]
-  }
-]
+0	
+id	"margarita"
+nombre	"Margarita Restaurant"
+categoria	"Restaurante Ecuatoriano"
+telefono	"593990095075"
+distancia_km	0.5
+calificacion	5
+credito	false
+es_proveedor_externo	true
+horario	"Lunes a Domingo"
+ubicacion	"Plaza Volare, Local 6"
+productos	
+0	
+categoria	"Desayunos"
+items	
+0	
+nombre	"Desayuno Sencillo"
+precio	5.0JS:5
+descripcion	"Bolón de queso, huevo frito, jugo natural y café pasado"
+1	
+nombre	"Bolón de Queso"
+precio	3.0JS:3
+2	
+nombre	"Bolón de Chicharrón"
+precio	3.5
+3	
+nombre	"Bolón Mixto"
+precio	4.0JS:4
+4	
+nombre	"Tigrillo"
+precio	6.5
+1	
+categoria	"Extras"
+items	
+0	
+nombre	"Huevo frito (unidad)"
+precio	0.5
+1	
+nombre	"Bistec de carne"
+precio	3.0JS:3
+2	
+nombre	"Canastas de camarón cevichado (7 unid)"
+precio	7.0JS:7
+2	
+categoria	"Entradas"
+items	
+0	
+nombre	"Pinchos de Jamón en Salsa de Piña"
+precio	4.5
+1	
+nombre	"Camarones Arrebozados"
+precio	7.0JS:7
+2	
+nombre	"Canastas de Camarón Cevichado (7 unid)"
+precio	7.0JS:7
+3	
+categoria	"Tradicionales"
+items	
+0	
+nombre	"Encebollado + Chifle"
+precio	3.5
+1	
+nombre	"Bollo de Albacora + Arroz"
+precio	3.0JS:3
+2	
+nombre	"Guatita con Arroz"
+precio	4.5
+3	
+nombre	"Yapingacho"
+precio	6.5
+4	
+nombre	"Fritada"
+precio	5.0JS:5
+5	
+nombre	"Caldo de Salchicha"
+precio	5.0JS:5
+6	
+nombre	"Seco de Chancho"
+precio	6.5
+7	
+nombre	"Seco de Pollo"
+precio	6.0JS:6
+8	
+nombre	"Cazuela de Albacora"
+precio	5.5
+9	
+nombre	"Cazuela Mixta (Albacora – Camarón – Calamar)"
+precio	9.0JS:9
+10	
+nombre	"Arroz con Pescado Frito (Dorado)"
+precio	6.0JS:6
+11	
+nombre	"Camarones Apanados"
+precio	7.0JS:7
+12	
+nombre	"Caldo de Bola de Mariscos (Camarón – Calamar – Cangrejo)"
+precio	9.5
+4	
+categoria	"Banderas"
+items	
+0	
+nombre	"Guatita + Encebollado"
+precio	6.5
+1	
+nombre	"Guatita + Seco de Chancho"
+precio	9.0JS:9
+2	
+nombre	"Guatita + Encebollado + Ceviche de Camarón"
+precio	10.0JS:10
+3	
+nombre	"Guatita + Encebollado + Seco de Chancho"
+precio	11.5
+5	
+categoria	"Especialidades"
+items	
+0	
+nombre	"Marea Brava"
+precio	7.0JS:7
+descripcion	"Arroz con cocolón, puré artesanal de papa chaucha, camarones y calamares en reducción de vino blanco"
+1	
+nombre	"Chaulafán Andino"
+precio	6.5
+descripcion	"Fritada de cerdo, mote, habas, choclo desgranado, papa chaucha, melloco, maduro acaramelado, chifles y huevo duro, bañado en salsa de maní"
+2	
+nombre	"Encocado de Camarón"
+precio	7.0JS:7
+3	
+nombre	"Camarones al Ajillo"
+precio	7.0JS:7
+4	
+nombre	"Arroz Meloso de Camarón"
+precio	7.0JS:7
+5	
+nombre	"Ceviche de Camarón"
+precio	7.0JS:7
+6	
+categoria	"Antojos"
+items	
+0	
+nombre	"Alitas x4 + papas fritas"
+precio	3.99
+1	
+nombre	"Alitas x8 + papas fritas"
+precio	6.99
+2	
+nombre	"Alitas x12 + papas fritas"
+precio	10.99
+3	
+nombre	"Alitas x20 + papas fritas"
+precio	16.99
+4	
+nombre	"Burguer Margarita"
+precio	6.5
+descripcion	"120g carne, mermelada de tocino, queso cheddar, vegetales y salsas secretas"
+5	
+nombre	"Mignon Burguer"
+precio	6.0JS:6
+descripcion	"120g carne reducida en vino tinto, salsa de champiñones y salsas secretas"
+6	
+nombre	"Salchipapas"
+precio	4.0JS:4
+1	
+id	"marquito"
+nombre	"Empanadas de Marquito"
+categoria	"Panadería y Snacks"
+telefono	"593998399183"
+distancia_km	0.3
+calificacion	5
+credito	false
+es_proveedor_externo	true
+horario	"Lunes a Domingo 7:00 - 20:00"
+ubicacion	"Local de prueba — coordinar punto de recogida"
+productos	
+0	
+categoria	"Empanadas"
+items	
+0	
+nombre	"Empanada de queso"
+precio	0.75
+1	
+nombre	"Empanada de carne"
+precio	1.00JS:1
+2	
+nombre	"Empanada de pollo"
+precio	1.00JS:1
+3	
+nombre	"Empanada mixta (carne y queso)"
+precio	1.25
+1	
+categoria	"Combos"
+items	
+0	
+nombre	"Combo 4 empanadas + jugo"
+precio	4.00JS:4
+1	
+nombre	"Docena de empanadas"
+precio	10.00JS:10
+2	
+id	"tecnogo"
+nombre	"TecnoGO"
+categoria	"Línea propia de LinkMarket - Streaming y TV Digital"
+telefono	"593990095075"
+notificar_a	"593990095075"
+operado_por	"LinkMarket"
+es_proveedor_externo	false
+calificacion	5
+credito	false
+horario	"Lunes a Domingo"
+ubicacion	"Instalación en persona — a domicilio o donde el cliente lleve sus dispositivos"
+descripcion	"TecnoGO es una línea propia de LinkMarket para planes de Flujo TV. Ofrece +900 canales en vivo, +9000 películas incluyendo estrenos en cartelera, +6000 series y todos los deportes del mundo en vivo. Calidad SD, HD, Full HD y 4K. Compatible con Android móvil y Smart TV. No compatible con iOS, Roku ni Apple TV. Requiere mínimo 5 Mbps."
+productos	
+0	
+categoria	"Suscripción mensual"
+items	
+0	
+nombre	"Plan Flujo TV — 30 días (hasta 3 dispositivos simultáneos)"
+precio	12.0JS:12
+descripcion	"Acceso completo: +900 canales en vivo, +9000 películas con estrenos, +6000 series y deportes en vivo. Calidad hasta 4K."
+1	
+categoria	"Instalación presencial (pago único)"
+items	
+0	
+nombre	"Instalación 1 dispositivo"
+precio	20.0JS:20
+1	
+nombre	"Instalación 2 dispositivos"
+precio	30.0JS:30
+2	
+nombre	"Instalación 3 dispositivos"
+precio	40.0JS:40
